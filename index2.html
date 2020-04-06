@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<h1><b> &ltcanvas&gt 사용예 (과제 #03-02)</h1>
+</head>
+
+<body> 
+
+<canvas id="Example" width="200" height="100">
+
+<script>
+var cv = document.getElementById("Example");
+var cx = cv.getContext("2d");
+cx.moveTo(0,0);
+cx.lineTo(200,100);
+cx.stroke();
+</script>
+
+<script>
+var cv = document.getElementById("Example");
+var cx = cv.getContext("2d");
+cx.moveTo(200,0);
+cx.lineTo(0,100);
+cx.stroke();
+</script>
+
+</canvas>
+
+</br>
+<canvas id="textbox" width="490" height="48">
+</canvas>
+
+<script>
+var tb = document.getElementById("textbox");
+var cx = tb.getContext("2d")
+cx.fillStyle ="rgba(214,214,214)";
+cx.fillRect(0,3,490,48);
+cx.fill();
+
+cx.font = "10pt 돋움체";
+cx.textAlign = "left";
+cx.fillStyle = "black";
+cx.fillText("웹프로그래밍2 과목. superson7의 예제 공간입니다.",0,20);
+
+</script>
+
+</body>
+</html>
